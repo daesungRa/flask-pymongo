@@ -22,7 +22,7 @@
         ```
         - **app** 은 flask 웹앱이다
         - **todo** 는 웹앱이 사용하는 메인 모듈이다.
-        - **validation** 은 입력된 json 데이터의 유효성을 체크하여 todo 에 전달하는 모듈이다.
+        - **validation** 은 입력된 json 데이터의 유효성을 체크하여 todo 에 전달하는 모듈이다. (요구되는 필드값이 있는지)
         - **database** 는 유효한 데이터를 mongodb 서버에 저장하고 그 결과를 리턴하는 모듈이다.
 - 기타
     * 로컬에서 mongodb 서버를 구동하고, flask 는 pymongo 모듈을 통해 접근 가능하다.

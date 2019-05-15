@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, Response, render_template, jsonify
 from flask_cors import CORS
 from src.models import todo
 
@@ -9,7 +9,7 @@ todo = todo.Todo()
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
-    return 'Welcome To This Page!'
+    return render_template('index.html'), 200
 
 # todo routes
 @app.route('/todos/', methods=['GET'])
